@@ -24,7 +24,6 @@
   <body>
     <div id="shopname">
       <h1>Adam's Shop</h1>
-      <img href="https://m.media-amazon.com/images/I/71bhWgQK-cL._AC_SL1500_.jpg">
     </div>
 
     <div id="tablePart">
@@ -136,7 +135,12 @@
     const changeShopAddress = function() {
         document.querySelector(".address").innerHTML = "Fake Address"
     }
-    
+    const addClassToAmazonLinks = function() {
+        let allOurANotes = document.querySelectorAll("a")
+        for (let A of allOurANotes){
+            A.classList.add("amazon-links")
+        }
+    }
     
   
         
