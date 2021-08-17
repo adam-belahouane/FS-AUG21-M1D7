@@ -9,8 +9,7 @@
          table,
       th,
       td {
-        border: 1px solid black;
-        align-items: center background-color rgba(62, 129, 65, 0.418);
+        border: 5px solid black;
       }
       #feedback {
         
@@ -120,13 +119,27 @@
           </form> 
     </div>
     <footer>
-        <p>Address:18 Main Road
+        <p class="address">Address:18 Main Road
             London
             SW98 5YH</p>
         <p>Adam's Shop</p>
       </footer>
 
 
-    <script></script>
+    <script>
+         const changeH1 = function () {
+      document.querySelector("h1").innerHTML = "New Shop"
+    }
+    const changeBackGroundColor = function() {
+        document.querySelector("body").style.backgroundColor = "blue"
+    }
+    const changeShopAddress = function() {
+        document.querySelector(".address").innerHTML = "Fake Address"
+    }
+    
+    
+  
+        
+    </script>
   </body>
 </html>
